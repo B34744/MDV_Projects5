@@ -13,24 +13,33 @@ var NumOfseeds = 10;
 var HasMoreFood = 40;
 var HasFood = true;
 var HasFriends = false;
+   var friends=["Tim","Jack","Ben"];
+// just a pop up box
+alert(MyDuck + " is hungry");
 
-
-// prompt
-        prompt(HasFriends);
-        
-        
 //procedure
         var division = function(){HasMoreFood/NumOfseeds;
         console.log( MyDuck + " eat's a lot of " + Eat);
 };division();
 
-//confirm
-HasFriends = confirm(MyDuck);
-if (HasFriends === false){
-             console.log("If " + MyDuck + " eat's seeds   he will be happy. "); 
-        } else { 
-          console.log(MyDuck + " Is a Happy duck");      
-        };
+
+
+ 
+if (HasFood === false){
+	if (NumOfseeds < 100){
+		NumOfseeds = NumOfseeds * 50;
+		console.log("If " + MyDuck + " eat's " + NumOfseeds + " seeds he will be happy. ");
+	} else { 
+		console.log(MyDuck + " will be sad! ");
+	}
+} else { 
+	if (HasFriends === true){
+		console.log(MyDuck + " Is a Happy duck");
+	} else {
+		console.log(MyDuck + " will eat his " + Eat );
+	}
+	
+}
         
         
         // number function        
@@ -79,11 +88,12 @@ return fishes;
 
 
 // Can not figure out why while loop is not working ?
-   var friends=["Tim","Jack","Ben"];
+
 var i=0;
 while (friends[i])
 {
 console.log(friends[i] );
 i++;
 };                           
+
 
