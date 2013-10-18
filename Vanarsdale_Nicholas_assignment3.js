@@ -11,9 +11,9 @@ var MyDuck = "Jeff";
 var Eat = "\"Duck\"Food";
 var NumOfseeds = 10;        
 var HasMoreFood = 40;
-var HasFood = true;
-var HasFriends = false;
-   var friends=["Tim","Jack","Ben"];
+var p = true;
+var q = false;
+
 // just a pop up box
 alert(MyDuck + " is hungry");
 
@@ -23,9 +23,9 @@ alert(MyDuck + " is hungry");
 };division();
 
 
-
+// conditional nested conditional
  
-if (HasFood === false){
+if (q === false){
 	if (NumOfseeds < 100){
 		NumOfseeds = NumOfseeds * 50;
 		console.log("If " + MyDuck + " eat's " + NumOfseeds + " seeds he will be happy. ");
@@ -33,7 +33,7 @@ if (HasFood === false){
 		console.log(MyDuck + " will be sad! ");
 	}
 } else { 
-	if (HasFriends === true){
+	if (p === true){
 		console.log(MyDuck + " Is a Happy duck");
 	} else {
 		console.log(MyDuck + " will eat his " + Eat );
@@ -56,14 +56,22 @@ return Seeds;
 };
 var GetQuacks = Quacks(9);
 console.log("little Quacks");{
-
-
+var j = 1;
+// Nested loop
 for ( i = 1; i < NumOfseeds; i++)
-console.log(HasMoreFood + " swim's across the pond");
-
+  for (j = 1; j < 15; j++) {
+                NumOfseeds = i - j;
+                if ( NumOfseeds < 10) {
+                   NumOfseeds = NumOfseeds;
+                } else {
+                   NumOfseeds  = NumOfseeds;
+				}
+console.log([j]+ " swim's across the pond");
+  }
+  console.log("Happy swiming");
 };
 
-//String Function
+//String Function / For loop 
 var CheckString = function(val) {
         var Strlen = val.length;
         for (var i = 0; i < Strlen; i++) {
@@ -72,9 +80,9 @@ var CheckString = function(val) {
                 };
         };
 };
-console.log("How many fish is " + MyDuck + " eating " + CheckString('123456-7890'));
+console.log("How many fish is " + MyDuck + " eating " + CheckString('123456-7890'));// Argument String
 
-//Boolean Function
+//Boolean Argument
 var Fish = function(type){ 
 var TotalFish = 10
 var        fishes;
@@ -86,14 +94,36 @@ fishes = Math.floor(type / fishes);
 return fishes;
 };
 
+// 
 
-// Can not figure out why while loop is not working ?
-
+/// while loop /array's method
+   var friends=["Tim","Jack","Ben"];
 var i=0;
 while (friends[i])
 {
 console.log(friends[i] );
 i++;
+
 };                           
 
 
+
+// jason data
+ 
+var Happy = {
+	 "Day":[
+	
+	 
+	 	{
+			"StartingOut" : "Wake",
+			"StartingAfter" : "up"
+		},
+		{
+			"EndDay" : "Go to",
+			"DayEnd" : "sleep"
+		}
+	]
+};
+
+var Fun = i; Happy = 3;
+for ( i = 1; i < Happy; i++);
