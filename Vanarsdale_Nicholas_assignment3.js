@@ -125,5 +125,6 @@ var Happy = {
 	]
 };
 
-var Fun = i; Happy = 3;
-for ( i = 1; i < Happy; i++);
+var Fun = i; 
+for ( i = 1; i < 9; i++);
+console.log(Happy);
