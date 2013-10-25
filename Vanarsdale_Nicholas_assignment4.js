@@ -47,7 +47,7 @@ var Email = function(val) {
 // array Function
 
 
-
+//Find the smallest value in an array than is greater then a given number.
 Array.prototype.GreaterThan=function(o){
 	var t=this,n=Number.POSITIVE_INFINITY,i;
 	for (i=0;i<t.length;i++) 
@@ -58,6 +58,13 @@ Array.prototype.GreaterThan=function(o){
 var arr=[1,6,12,14],n=5;
 
 
+//Find the total value of just the number in an array, even if some of the items are not numbers.
+var arr = [1,"pickles",3,"onions",5,10,6,"SDI"];
+
+var sum = 0;
+for (var i=0; i<arr.length; i++) {
+  if (!isNaN(parseInt(arr[i]))) { sum += arr[i]; }
+}
 
 
 
@@ -73,3 +80,4 @@ console.log(diffDays);
 console.log("Does a string follow an email " + Email("aaa@bbb.ccc"));
 console.log("Does a string follow a phone number " + Phone("123-456-7890"));
 console.log(arr.GreaterThan(n)); 
+console.log(sum);
