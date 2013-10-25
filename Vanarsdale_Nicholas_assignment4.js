@@ -48,6 +48,16 @@ var Email = function(val) {
 
 
 
+Array.prototype.GreaterThan=function(o){
+	var t=this,n=Number.POSITIVE_INFINITY,i;
+	for (i=0;i<t.length;i++) 
+		if (o<t[i] && t[i]<n) n=t[i];
+	return n;
+}
+
+var arr=[1,6,12,14],n=5;
+
+
 
 
 
@@ -58,7 +68,8 @@ var Email = function(val) {
 
 
 //functioon calls
+console.log(dec);
 console.log(diffDays);
 console.log("Does a string follow an email " + Email("aaa@bbb.ccc"));
 console.log("Does a string follow a phone number " + Phone("123-456-7890"));
-console.log(dec);
+console.log(arr.GreaterThan(n)); 
